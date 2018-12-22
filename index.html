@@ -57,6 +57,16 @@ body {margin:0;}
 </style>
 </head>
 <body>
+    <script>
+        function details() {
+            var x = document.getElementById("more");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        </script>
 <header class="site-header">
   <div class="wrapper">
     <a class="site-title" href="index.html">Ayushi Rastogi</a>
@@ -92,8 +102,6 @@ body {margin:0;}
 <div class="page-content">
       <div class="wrapper">
         <div class="home">
-
-
 <section>
     <div id="one">
     	<img class="profile-home" src="resources/images/Ayushi.jpg" alt="Ayushi Rastogi" style="width: 80%; height: 80%">
@@ -101,21 +109,22 @@ body {margin:0;}
 
     <div id="two">
 	    <p align="justify">
-		I am a postdoctoral researcher in <a href="http://www.ics.uci.edu/~andre/">André van der Hoek's</a> group at the University of California, Irvine. I have a Ph.D. from IIIT-Delhi, India in the co-supervision of <a href="https://www.microsoft.com/en-us/research/people/nachin/">Nachiappan Nagappan</a> and <a href="https://www.iiitd.edu.in/~jalote/">Pankaj Jalote </a>. 
-	    </p> 
-	     
+        My research is on the <b>technical</b> and <b>human aspects</b> of software development to improve <b>developer productivity</b> and <b>software quality</b>. I look for <b>data-driven evidences</b> for the developers to self-reflect; and insights for the decision makers of software projects on the best practices and potential areas for improvement.
+	    </p>
         <p align="justify">
-		I study the underlying workings of software teams to guide decisions of stakeholders for improved team performance. 
-My research lies at the intersection of <b>software engineering</b> and <b>data science</b>. I infer subtle details of development by mining data archives generated during various development activities and from the views and experiences of stakeholders. Then, I empirically analyze the specifics of development gathered from various sources to present data-driven insights.</p>
-
-		<br />
+        Broadly, my research lies at the intersection of <b>software engineering</b> and <b>data science</b>. I conduct <b>empirical studies</b> using software artifacts and experiences of developers. The outcome of my studies is a theory, framework, models, metrics, tools, or recommendations.
+        </p>
+        <p align="justify">
+        Currently I am working with Prof. Arie van Deursen as a <b>postdoctoral researcher</b> in the Software Engineering Group at TU Delft. Prior to that, <a onclick="details();" style="cursor: pointer; cursor: hand;">...</a>
+        <div id="more" style="display:none" align="justify"> I was a postdoctoral researcher in Prof. Andre van der Hoek’s group at UC Irvine. I finished my PhD from IIIT-Delhi (India) in the co-supervision of Dr. Nachiappan Nagappan and Prof. Pankaj Jalote on the “Empirical Analyses of Software Contributor Productivity”.
+            </div>
+        </p>
 		<br />
 		
 	</div>
 	
 	<div class="emph-border" align="justify">		
     		<!--I am on the job market.-->
-		Look forward to interesting collaborations!
     <b>Profiles</b>: <a href="https://drive.google.com/file/d/1WcBH_VTwhv0b8rNlogMPYyYiYQhj_y0A/view?usp=sharing">CV-short</a>, <a href="https://drive.google.com/file/d/1B99YSZ01WCDUrJ8s4aXcKDx9NeOSnN-M/view?usp=sharing">CV-long</a>, <a href="https://scholar.google.com/citations?user=W_V42b4AAAAJ&hl=en">Google Scholar</a>, <a href="https://dblp.org/pers/hd/r/Rastogi:Ayushi">DBLP</a> <br>
     </div>
 </section>
