@@ -55,7 +55,26 @@
                                         text-transform: uppercase;
                                         font-family: 'Titillium Web', sans-serif;
                                     }
-                                    </style>
+    ul.alternate-list li:nth-child(odd) {
+      background-color: #f0f0f0; /* Light gray for odd rows */
+    }
+
+    ul.alternate-list li:nth-child(even) {
+      background-color: #ffffff; /* White for even rows */
+    }
+
+    ul.alternate-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul.alternate-list li {
+      padding: 10px;
+      margin-bottom: 10px; /* Adds space after each row */
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+                                   
                                     </head>
     <body>
         <header class="site-header">
@@ -115,7 +134,7 @@ I am an active member of Netherlands' (IPN EDI) and Europe-wide (Informatics Eur
                     </section>
                     <section>
                         <h2>Recent News!</h2>
-                        <ul>
+                        <ul class="alternate-list">
                         <li> <strong>2025</strong> I am honored to serve as MSR’25 program co-chair.</li>
                             <li> [2024] My first PhD student, Dr. Gunnar Kudrjavets, received the prestigious MSR 2024 Distinguished Doctoral Research Award for his Ph.D. dissertation “The Need for Speed: The Road Ahead Towards Increased Code Review Velocity.”</li>
 
